@@ -1,9 +1,7 @@
-import '../styles/Body.css'
+import "../styles/Body.css";
 
-export default function Body() {
-  return (
-    <>
-      <h1>Body</h1>
-    </>
-  )
-}
+const Body = ({ children }) => {
+  return <main className="body">{children}</main>;
+};
+
+export default Body;

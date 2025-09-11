@@ -1,0 +1,19 @@
+.header {
+  background: var(--surface-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.8rem 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;   /* centers everything */
+  align-items: center;
+  gap: 3rem;                 /* spacing between items */
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--primary-accent-color);
+  letter-spacing: 1px;
+}

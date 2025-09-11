@@ -1,0 +1,192 @@
+/* src/styles/Form.css */
+
+/* Form container */
+.cv-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--surface-color);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  color: var(--primary-text-color);
+  box-sizing: border-box;
+}
+
+/* Heading */
+.cv-form h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  color: var(--primary-accent-color);
+}
+
+/* Default form-group: column layout */
+.form-group {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.form-group label {
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--secondary-text-color);
+}
+
+/* Inputs & textareas */
+.form-group input,
+.form-group textarea {
+  padding: 0.7rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--background-color);
+  color: var(--primary-text-color);
+  font-size: 0.95rem;
+  min-width: 0; /* prevents overflow in flex children */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-accent-color);
+  box-shadow: 0 0 0 3px rgba(183, 162, 201, 0.12);
+}
+
+/* Sections */
+.form-section {
+  margin-bottom: 2rem;
+}
+
+.form-section h3 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  color: var(--primary-accent-color);
+  font-size: 1.05rem;
+}
+
+/* Section header (title + small add button) */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  gap: 1rem;
+}
+
+/* Inline skill row: override column defaults to row for .inline usage */
+.form-group.inline {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Make the input take remaining space in inline row */
+.form-group.inline input {
+  flex: 1 1 auto;
+  min-width: 0; /* critical for flex children to prevent overflow */
+}
+
+/* History entry card */
+.history-entry {
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: var(--surface-color);
+}
+
+/* History header: index + small remove button */
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+/* Small text for index */
+.history-index {
+  margin: 0;
+  color: var(--secondary-text-color);
+  font-size: 0.95rem;
+}
+
+/* ---- Small square icon buttons (add/remove) ---- */
+.icon-btn {
+  /* explicit, compact square */
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  padding: 0;
+  margin: 0;
+  background: var(--secondary-accent-color);
+  color: var(--primary-text-color);
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease, transform 0.08s ease;
+  flex-shrink: 0;
+}
+
+/* hover / active micro-animations */
+.icon-btn:hover {
+  background: var(--primary-accent-color);
+  transform: translateY(-1px);
+}
+.icon-btn:active {
+  transform: translateY(0);
+}
+
+/* Danger variant for remove buttons */
+.icon-btn.danger {
+  background: #b33a3a; /* you can replace with var if desired */
+}
+.icon-btn.danger:hover {
+  background: #e74c3c;
+}
+
+/* Optional: slightly smaller + sign for section header add */
+.section-header > .icon-btn {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+}
+
+/* ---- Submit button (explicit full-width) ---- */
+.submit-btn {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.8rem;
+  background: var(--primary-accent-color);
+  color: var(--primary-text-color);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-btn:hover {
+  background: var(--secondary-accent-color);
+}
+
+/* small responsive tweaks */
+@media (max-width: 520px) {
+  .cv-form {
+    padding: 1rem;
+  }
+
+  .section-header {
+    gap: 0.5rem;
+  }
+
+  .section-header h3 {
+    font-size: 1rem;
+  }
+}

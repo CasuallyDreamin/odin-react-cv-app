@@ -1,0 +1,29 @@
+/* Template selection container */
+.template-selection {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+/* Each template card */
+.template-card {       /* smaller card */
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 6px;
+  transition: transform 0.2s, border-color 0.2s;
+  text-align: center;
+}
+
+.template-card:hover {
+  transform: scale(1.05);
+  border-color: var(--primary-accent-color);
+}
+
+/* Selected template highlight */
+.template-card.selected {
+  border-color: var(--primary-accent-color);
+  box-shadow: 0 0 8px rgba(183, 162, 201, 0.5);
+}

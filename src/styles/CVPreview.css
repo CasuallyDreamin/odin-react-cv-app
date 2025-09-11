@@ -1,0 +1,128 @@
+.cv-preview {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background: var(--surface-color);
+  color: var(--primary-text-color);
+  border: 1px solid var(--border-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cv-preview header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cv-preview header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.cv-preview header h2 {
+  margin: 0.2rem 0;
+  font-size: 1.2rem;
+}
+
+.cv-preview header p {
+  font-size: 0.9rem;
+}
+
+/* Sections */
+.cv-preview section {
+  margin-bottom: 1.5rem;
+}
+
+.cv-preview section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Skill list */
+.cv-preview ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.cv-preview li {
+  margin-bottom: 0.3rem;
+}
+
+/* History items */
+.history-item {
+  margin-bottom: 1rem;
+}
+
+.history-item strong {
+  font-weight: 600;
+}
+
+/* ------------------ */
+/* MODERN TEMPLATE */
+.cv-preview.modern {
+  background: #1C1C1E;
+  color: #E6E6E6;
+}
+
+.cv-preview.modern header h1 {
+  color: #4A90E2;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.cv-preview.modern header h2,
+.cv-preview.modern header p {
+  color: #E6E6E6;
+}
+
+.cv-preview.modern section h3 {
+  border-bottom: 2px solid #4A90E2;
+  padding-bottom: 0.2rem;
+}
+
+/* ------------------ */
+/* CLASSIC TEMPLATE */
+.cv-preview.classic {
+  background: #FAFAFA;
+  color: #222222;
+  font-family: 'Times New Roman', serif;
+  border: 2px solid #333333;
+}
+
+.cv-preview.classic header h1 {
+  color: #333333;
+}
+
+.cv-preview.classic header h2,
+.cv-preview.classic header p {
+  color: #555555;
+}
+
+.cv-preview.classic section h3 {
+  border-bottom: 1px solid #999999;
+}
+
+/* ------------------ */
+/* CREATIVE TEMPLATE */
+.cv-preview.creative {
+  background: #FDF6E3;
+  color: #2B2D42;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  border-left: 6px solid #9B7EBB;
+  padding-left: 1rem;
+}
+
+.cv-preview.creative header h1 {
+  color: #9B7EBB;
+}
+
+.cv-preview.creative header h2 {
+  color: #4A90E2;
+}
+
+.cv-preview.creative header p {
+  color: #2B2D42;
+}
+
+.cv-preview.creative section h3 {
+  color: #E07A5F;
+}

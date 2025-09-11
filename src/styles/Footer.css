@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;  
+  text-align: center;
+  padding: 1.5rem 2rem;
+  background: var(--surface-color);
+  border-top: 1px solid var(--border-color);
+  color: var(--secondary-text-color);
+  font-size: 0.9rem;
+}
+
+.footer .highlight {
+  color: var(--primary-accent-color);
+  font-weight: 600;
+}
+
+.footer a {
+  color: var(--primary-accent-color);
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.2s;
+}
+
+.footer a:hover {
+  color: var(--secondary-accent-color);
+}
