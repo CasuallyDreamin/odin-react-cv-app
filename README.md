@@ -1,7 +1,7 @@
 # Odin React CV App
 
 A CV builder app inspired by The Odin Project, built using React. This app allows users to create professional CVs dynamically with selectable templates and live previews.
-https://cdcvgen.netlify.app/
+
 ---
 ## Deployment
 
